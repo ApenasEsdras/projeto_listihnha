@@ -1,7 +1,6 @@
-// responsavel por configurar e dar estilo as rotas
 import 'package:flutter_modular/flutter_modular.dart';
+import 'package:listinha/src/configuration/configuration_page.dart';
 
-import 'configuration/configuration_page.dart';
 import 'home/home_module.dart';
 
 class AppModule extends Module {

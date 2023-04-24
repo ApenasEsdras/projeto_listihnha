@@ -1,6 +1,6 @@
 import 'package:flutter_modular/flutter_modular.dart';
 
-import 'edit_tack_board_page.dart';
+import 'edit_task_board_page.dart';
 import 'home_page.dart';
 
 class HomeModule extends Module {

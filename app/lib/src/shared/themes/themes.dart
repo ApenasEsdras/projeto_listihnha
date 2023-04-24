@@ -5,7 +5,7 @@ part 'color_schemes.g.dart';
 // import 'color_schemes.g.dart';
 
 // chamamos o elemenmto com o get para trazer mais performance a aplicacao.
-ThemeData get lightTeme => ThemeData(
+ThemeData get lightTheme => ThemeData(
       useMaterial3: true,
       colorScheme: _lightColorScheme,
       // coloca uma cor de funco (ou autera a cor de base n asessao titulo)
@@ -17,14 +17,14 @@ ThemeData get lightTeme => ThemeData(
         // autrera a cor primaria do botao
         backgroundColor: _lightColorScheme.primary,
         // autera a cor primaria do icone
-        foregroundColor: Colors.white,
+        foregroundColor: _lightColorScheme.onPrimary,
       ),
       segmentedButtonTheme: _segmentedButtonTheme,
     );
 
 // ================== //
 
-ThemeData get dartTeme => ThemeData(
+ThemeData get dartTheme => ThemeData(
       useMaterial3: true,
       colorScheme: _darkColorScheme,
       appBarTheme: AppBarTheme(

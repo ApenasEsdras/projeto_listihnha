@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_modular/flutter_modular.dart';
-
 import 'package:listinha/src/shared/themes/themes.dart';
+
+import 'configuration/configuration_page.dart';
+import 'home/edit_task_board_page.dart';
+import 'home/home_page.dart';
 
 class AppWidget extends StatelessWidget {
   const AppWidget({super.key});
@@ -9,19 +11,20 @@ class AppWidget extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    // Modular.setInitialRoute('/home/');
-
-    return MaterialApp.router(
+    return MaterialApp(
       title: 'Flutter Demo',
       // remove o a img de debugger
       debugShowCheckedModeBanner: false,
       // autera o tema do app
       themeMode: ThemeMode.light,
-      theme: lightTeme,
-      darkTheme: dartTeme,
-      // implemetando rotas
-      routerDelegate: Modular.routerDelegate,
-      routeInformationParser: Modular.routeInformationParser,
+      theme: lightTheme,
+      darkTheme: dartTheme,
+
+      routes: {
+        '/': (context) => const HomePage(),
+        '/edit': (context) => const EditiTaskBoardPage(),
+        '/config': (context) => const ConfigurationPage(),
+      },
     );
   }
 }

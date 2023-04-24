@@ -5,10 +5,6 @@
 		},
 		{
 			"path": "backend"
-		},
-		{
-			"name": "projeto_listihnha",
-			"path": "."
 		}
 	],
 	"settings": {}
